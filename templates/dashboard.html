@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fafafa; padding: 20px; }
+    h1 { text-align: center; }
+    table { width: 80%; margin: auto; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+    th { background: #333; color: white; }
+    tr:nth-child(even) { background: #f9f9f9; }
+  </style>
+</head>
+<body>
+  <h1>📊 Instagram Profile Rankings</h1>
+  <table>
+    <tr>
+      <th>Rank</th>
+      <th>Username</th>
+      <th>Followers</th>
+      <th>Following</th>
+      <th>Posts</th>
+    </tr>
+    {% for profile in profiles %}
+  <tr>
+    <td>{{ loop.index }}</td>   <!-- Jinja gives you index automatically -->
+    <td>@{{ profile.username }}</td>
+    <td>{{ profile.followersCount }}</td>
+    <td>{{ profile.followsCount }}</td>
+    <td>{{ profile.postsCount }}</td>
+  </tr>
+{% endfor %}
+
+  </table>
+</body>
+</html>
