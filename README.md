@@ -1,6 +1,6 @@
 E-cell Golden Task
 
-Please not that it may take upto a minute to load the site, since its hosted on a free render server.
+Please note that it may take upto a minute to load the site, since its hosted on a free render server.
 
 
 The scraper uses a apify to scrape data, which is converted to JSON and displayed on a web-based dashboard
@@ -18,6 +18,7 @@ To build, follow the steps-
 
 to change the Instagram handles,
 change the dictionary elements in main.py to the desired ones.
+
 
 
 
